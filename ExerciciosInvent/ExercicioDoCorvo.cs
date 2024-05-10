@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ExerciciosInvent
 {
-    internal class ExercicioDoCorvo
+    public sealed class ExercicioDoCorvo
     {
 
         public void ExercicioResolvidoCorvo()
@@ -59,9 +59,6 @@ namespace ExerciciosInvent
             }
         }
 
-        public virtual void disposable()
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

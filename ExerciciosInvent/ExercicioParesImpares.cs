@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections;
 
 namespace ExerciciosInvent
 {
-    internal class ExercicioParesImpares
+    public class ExercicioParesImpares
     {
  
         //Lê um valor inicial para definir quantos números serão lidos. Depois lê os números adicionando cada um em um array
