@@ -1,11 +1,16 @@
 using ExerciciosInvent;
+using System.Buffers.Text;
 
-﻿namespace ExerciciosInvent
+namespace ExerciciosInvent
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
-       
+        static void Main(string[] args) 
+        {
+            dynamic mem = new MemoryStream(Int32.MaxValue);
+            mem.Write(new byte[] { 0x00, 0x01, 0x02, 0x03 });
+
+
             var exercicioParesImpares = new ExercicioParesImpares();
             exercicioParesImpares.OrganizaParesImpares();
 
@@ -14,7 +19,6 @@ using ExerciciosInvent;
 
             var baskhara = new ExercicioBaskhara();
             baskhara.formulaDeBaskhara();
-
         }
     }
 }

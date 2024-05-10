@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections;
 
 namespace ExerciciosInvent
 {
-    internal class ExercicioParesImpares
+    public class ExercicioParesImpares
     {
         public void OrganizaParesImpares()
         {
@@ -40,9 +35,19 @@ namespace ExerciciosInvent
                 {
                     Console.WriteLine(n);
                 }
-
-
             }
+        }
+
+        public Thread nowlyThread()
+        {
+            Thread thread = new Thread(OrganizaParesImpares);
+            thread.Start();
+            return thread;
+        }
+
+        public void nowlyThread(Thread thread)
+        {
+            thread.Join();
         }
     }
 }

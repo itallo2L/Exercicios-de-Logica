@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ExerciciosInvent
 {
-    internal class ExercicioDoCorvo
+    public sealed class ExercicioDoCorvo
     {
 
         public void ExercicioResolvidoCorvo()
@@ -55,8 +56,12 @@ namespace ExerciciosInvent
 
 
                 }
-
             }
+        }
+
+        public virtual void disposable()
+        {
+            throw new NotImplementedException();
         }
     }
 }
