@@ -1,10 +1,6 @@
-﻿namespace ExerciciosInvent
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
-    }
-}
+﻿
+using ExerciciosInvent;
+
+var baskhara = new ExercicioBaskhara();
+
+baskhara.formulaDeBaskhara();
