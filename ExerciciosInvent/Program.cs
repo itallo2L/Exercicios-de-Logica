@@ -14,6 +14,9 @@ using ExerciciosInvent;
 
             var baskhara = new ExercicioBaskhara();
             baskhara.formulaDeBaskhara();
+
+            //conflito
+            //mais alguma coisa só pra ficar melhor
         }
     }
 }
