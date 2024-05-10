@@ -4,8 +4,8 @@ using ExerciciosInvent;
 {
     internal class Program
     {
-        static void Main(string[] args)
-       
+        static void Main(string[] args) 
+        {
             var exercicioParesImpares = new ExercicioParesImpares();
             exercicioParesImpares.OrganizaParesImpares();
 
@@ -14,7 +14,6 @@ using ExerciciosInvent;
 
             var baskhara = new ExercicioBaskhara();
             baskhara.formulaDeBaskhara();
-
         }
     }
 }
