@@ -9,9 +9,13 @@ namespace ExerciciosInvent
 {
     internal class ExercicioParesImpares
     {
+ 
         //Lê um valor inicial para definir quantos números serão lidos. Depois lê os números adicionando cada um em um array
         //depois de verificar se é par ou impar. Depois mostra os valores seguindo uma regra de ordenação.
         //Regra de ordenação: Imprimi primeiro os pares em ordem crescente depois os impares em ordem decrescente
+
+        //Comentario
+         
         public void OrganizaParesImpares()
         {
             int numeroDeValores = int.Parse(Console.ReadLine()!);
