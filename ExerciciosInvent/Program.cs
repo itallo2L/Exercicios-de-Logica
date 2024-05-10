@@ -1,5 +1,6 @@
 using ExerciciosInvent;
 using System.Buffers.Text;
+using System.Xml;
 
 namespace ExerciciosInvent
 {
@@ -7,18 +8,21 @@ namespace ExerciciosInvent
     {
         static void Main(string[] args) 
         {
-            dynamic mem = new MemoryStream(Int32.MaxValue);
-            mem.Write(new byte[] { 0x00, 0x01, 0x02, 0x03 });
-
-
+            Console.WriteLine("Exercicio impar e par");
             var exercicioParesImpares = new ExercicioParesImpares();
             exercicioParesImpares.OrganizaParesImpares();
-
+            Console.WriteLine("Execicio do corvo");
             ExercicioDoCorvo exercicioDoCorvo = new ExercicioDoCorvo();
             exercicioDoCorvo.ExercicioResolvidoCorvo();
-
+            Console.WriteLine("Exercicio da formula de baskhara");
             var baskhara = new ExercicioBaskhara();
             baskhara.formulaDeBaskhara();
+
+
+            //conflito
+            //mais alguma coisa só pra ficar melhor
+
+
         }
     }
 }

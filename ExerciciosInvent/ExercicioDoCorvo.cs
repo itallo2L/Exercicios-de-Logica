@@ -59,9 +59,6 @@ namespace ExerciciosInvent
             }
         }
 
-        public virtual void disposable()
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

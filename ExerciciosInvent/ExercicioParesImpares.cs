@@ -4,16 +4,23 @@ namespace ExerciciosInvent
 {
     public class ExercicioParesImpares
     {
+ 
+        //Lê um valor inicial para definir quantos números serão lidos. Depois lê os números adicionando cada um em um array
+        //depois de verificar se é par ou impar. Depois mostra os valores seguindo uma regra de ordenação.
+        //Regra de ordenação: Imprimi primeiro os pares em ordem crescente depois os impares em ordem decrescente
+
+        //Comentario
+         
         public void OrganizaParesImpares()
         {
-            int numeroDeValores = int.Parse(Console.ReadLine());
+            int numeroDeValores = int.Parse(Console.ReadLine()!);
             var arrayPar = new ArrayList();
             var arrayImpar = new ArrayList();
             if (1 < numeroDeValores && numeroDeValores <= Math.Pow(10, 5))
             {
                 for (int contador = 0; contador < numeroDeValores; contador++)
                 {
-                    int numero = int.Parse(Console.ReadLine());
+                    int numero = int.Parse(Console.ReadLine()!);
                     if (numero % 2 == 0)
                     {
                         arrayPar.Add(numero);
@@ -36,18 +43,6 @@ namespace ExerciciosInvent
                     Console.WriteLine(n);
                 }
             }
-        }
-
-        public Thread nowlyThread()
-        {
-            Thread thread = new Thread(OrganizaParesImpares);
-            thread.Start();
-            return thread;
-        }
-
-        public void nowlyThread(Thread thread)
-        {
-            thread.Join();
         }
     }
 }
