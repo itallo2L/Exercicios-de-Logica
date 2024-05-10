@@ -1,6 +1,20 @@
-﻿
 using ExerciciosInvent;
 
-var baskhara = new ExercicioBaskhara();
+﻿namespace ExerciciosInvent
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+       
+            var exercicioParesImpares = new ExercicioParesImpares();
+            exercicioParesImpares.OrganizaParesImpares();
 
-baskhara.formulaDeBaskhara();
+            ExercicioDoCorvo exercicioDoCorvo = new ExercicioDoCorvo();
+            exercicioDoCorvo.ExercicioResolvidoCorvo();
+
+            var baskhara = new ExercicioBaskhara();
+            baskhara.formulaDeBaskhara();
+
+        }
+    }
+}
